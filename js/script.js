@@ -32,13 +32,13 @@ let pokemonRepository = (function() {
     //creating an li element inside the ul parent
     let listPokemon = document.createElement("li");
     // adding class to li items
-    listPokemon.classList.add("group-list-item");
+    listPokemon.classList.add("group-list-item", "col-sm-6");
     // creating a button for each pokemon
     let button = document.createElement("button");
     // setting the inner text of each button
     button.innerText = pokemon.name;
     // adding the class poke-button to each created button
-    button.classList.add("btn", "btn-primary", "poke-button");
+    button.classList.add("btn", "btn-primary", "btn-block");
     // setting attributes for buttons
     button.setAttribute("data-target", "#exampleModal");
     button.setAttribute("data-toggle", "modal");
