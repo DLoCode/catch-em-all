@@ -1,13 +1,13 @@
-html,
+*html,
 body {
   font-family: Arial, sans-serif;
 }
 
-#modal-container {
+/*#modal-container {
   display: none;
 }
 
-#modal-container.is-visible {
+/*#modal-container.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -18,10 +18,10 @@ body {
   background: rgba(0, 0, 0, 0.5);
 
   /* to show it above other content */
-  z-index: 999;
+  /*z-index: 999;
 
   /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
+  /*overflow: auto;
 
   text-align: center;
   display: block;

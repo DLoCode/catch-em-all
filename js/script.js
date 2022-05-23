@@ -47,9 +47,9 @@ let pokemonRepository = (function() {
     // putting li element and its contents inside the ul
     pokemonList.appendChild(listPokemon);
     // event listerner for 'click' to log pokemon information
-    //button.addEventListener('click',function (event) {
-      //showDetails(pokemon);
-    //})
+    button.addEventListener('click',function (event) {
+      showDetails(pokemon);
+    })
   }
 
   function loadList(pokemon) {
@@ -95,29 +95,26 @@ let pokemonRepository = (function() {
     //closeButtonElement.innerText = 'Close';
     //closeButtonElement.addEventListener('click', hideModal);
 
-    let titleElement = $(".modal-title");
+    let titleElement = $("#pokemon-name");
 
     let contentElement = $(".modal-body");
 
-    let headerElement = $(".modal-header");
-
     titleElement.empty();
-    contentElement.empty();
 
-    let nameElement = $("<h2>" + pokemon.name + "</h2>");
+    let nameElement = $("<h5>" + pokemon.name + "</h5>");
 
     let heightElement = $("<p>" + "height: " + pokemon.height + "</p>");
 
-    let imgElement = $ ('<img class="pokemon-image">');
-    imgElement.attr("src", pokemon.imageUrl);
+    let imgElement = $ ('<img src="' + pokemon.imageUrl + '"alt=' + pokemon.name + '>');
 
     let typesElement = $('<p>' + "types: " + pokemon.types + '</p>');
 
       // appending elements
-    titleElement.append(nameElement);
-    contentElement.append(heightElement);
-    contentElement.append(imgElement);
-    contentElement.append(typesElement);
+    $("#pokemon-name").html(nameElement);
+    $("#pokemon-height").append(heightElement);
+    $("#pokemon-image").append(imgElement);
+    $("#pokemon-types").append(typesElement);
+    $("#modal").modal("show");
 
     //modalContainer.classList.add('is-visible');
     //document.querySelector('#exampleModal').addEventListener('click', () => {
