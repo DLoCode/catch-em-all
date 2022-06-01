@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My JS app</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="dist/styles-mini.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,7 +34,7 @@
         <div class="sr-only">Navigation bar</div>
       </div>
     </nav>
-    <h2>Pokedex</h2>
+    <img src="img/logo.svg" alt="app-logo" class="logo-item">
     <div class="container">
             <ul class="list-group list-unstyled text-center flex-wrap"></ul>
       <div class="sr-only">List of Pokemon</div>
@@ -61,6 +64,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
-    <script src="js/script.js"></script>
+    <script src="dist/script-mini.js"></script>
   </body>
 </html>

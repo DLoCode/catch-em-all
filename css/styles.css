@@ -1,68 +1,31 @@
-*html,
+*html {
+  background-color: var(--primary-color);
+}
+/* colors used (light yellow) #f4de87
+primary color (light grey) #c3c3c3
+secondary color (light red) #f66083
+*/
+:root {
+  --button-color: #f4de87;
+  --primary-color: #c3c3c3;
+  --secondary-color: #f66083;
+}
 body {
-  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  font-family: "press Start 2P";
+  font-weight: 400;
+  font-size: 16px;
 }
 
-/*#modal-container {
-  display: none;
-}
-
-/*#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* to show it above other content */
-  /*z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  /*overflow: auto;
-
-  text-align: center;
-  display: block;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
+.logo-item {
+  width: 500px;
+  height: auto;
+  align-self: left;
 }
 
 .poke-button {
-  background-color: #23ca47;
-  color: white;
-  border: none;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding: 14px 28px;
-  font-size: 14;
-  margin: 2px 4px;
+  background-color: var(--button-color);
+  color: black;
+  border-color: var(--button-color);
+  margin-bottom: 3px;
 }
